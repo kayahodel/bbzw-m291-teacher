@@ -8,7 +8,7 @@ body{
     height: 80px;
     padding: 25px;
     display: grid;
-    grid-template-columns: 150px 1fr 300px;
+    grid-template-columns: 20% 1fr 20%;
     background-color: #90ee90;
 }
 
@@ -26,7 +26,7 @@ body{
     height: 30px;
     padding: 20px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     text-align: center;
 }
 
