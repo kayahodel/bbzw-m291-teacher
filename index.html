@@ -7,38 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online-Shop deinSmartphone.ch</title>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
-
+    <link rel="icon" href="assets/images/ds_logo.png" type="image/icon type">
 
   </head>
 
   <body>
     <div class="header">
         <div class="logo">
-            <p>Logo</p>
+            <img src="assets/images/ds_logo.png" alt="Logo" height="100%">
         </div>
 
         <div class="title">
             <p>deinSmartphone.ch</p>
         </div>
 
-        <div class="link">
-            <a href="shop.html" >Shop</a>
-            <a href="game.html" >Game</a>
+        <div>
+            <label>
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span> </span>
+                <ul>
+                  <li> <a href="index.html">Home</a> </li>
+                  <li> <a href="shop.html">Shop</a> </li>
+                  <li> <a href="game.html">Game</a> </li>
+                </ul>
+                </label>
         </div>
     </div>
 
     <div class="content">
         <div class="startseite">
             <h2>Über unser Shop</h2><br>
+            <img src="assets/images/handy_startseite.png" alt="Wir reparieren dein Handy" width="100%">
             <p>Verkauf von alten Handys, Service und Reparaturen</p>
-            <a href="shop.html"><button>Los geht's</button></a> 
+            <a href="shop.html"><button>Hier gehts weiter zum Shop</button></a> 
         </div>
 
         <div class="formular">
             <h2>Jetzt spielen und gewinnen!</h2>
+            <p>Füllen Sie das Formular und erhalten Sie die Chance auf ein CHF 10 Gutschein für unseren Shop.</p>
             <form>
-            <input id="vorname" type="text" placeholder="Vorname" class="felder"><br>
-            <input id="email" type="email" placeholder="E-mail" class="felder"><br>
+            <input id="vorname" type="text" placeholder="Vorname*" class="felder" required><br>
+            <input id="email" type="email" placeholder="E-mail*" class="felder" required><br>
             <button id="submit">Start Game</button>
             </form>
         </div>
