@@ -9,7 +9,12 @@ body{
     padding: 25px;
     display: grid;
     grid-template-columns: 20% 1fr 20%;
-    background-color: #ffffff;
+    background-color: #A9CAEB;
+}
+
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
 
 .logo{
@@ -20,15 +25,14 @@ body{
 .content{
     flex: auto;
     background-color: #ffffff;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
-    justify-content: center;
 }
 
 .footer{
-    background-color: #A1D9A0;
+    background-color: #A9CAEB;
     height: 30px;
     padding: 20px;
     display: grid;
@@ -37,11 +41,11 @@ body{
 }
 
 .formular{
-    background-color: #c0e5f3;
+    background-color: #ffffff;
     padding: 35px;
-    justify-content: center;
     border-radius: 5px;
-    max-width: 600px;
+    max-width: 500px;
+    display: inline-block;
 }
 
 .felder{
@@ -50,7 +54,15 @@ body{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #CCEBF7;
+}
+
+.shop{
+  flex: auto;
+  background-color: #ffffff;
+  max-width: 1400px;
+  margin: auto;
+  padding: 15px;
 }
 
 button {
@@ -58,7 +70,8 @@ button {
     margin: 5px;
     max-width: 200px;
     padding: 10px;
-    background-color: #A1D9A0;
+    margin-bottom: 10px;
+    background-color: #A9CAEB;
     border: none;
     border-radius: 5px;
     color: white;
@@ -118,7 +131,7 @@ button {
     display: block;
     width: 100%;
     height: 100%;
-    background: #69d2e7;
+    background: #A9CAEB;
   }
   
   label .hamburger:before { top: -10px; }
@@ -170,7 +183,7 @@ button {
   label a {
     margin-bottom: 1em;
     display: block;
-    color: #A1D9A0;
+    color: #A9CAEB;
     text-decoration: none;
     
   }
