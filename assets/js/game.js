@@ -21,8 +21,6 @@ const startGame = () => {
   startGameLoop()
 }
 
-
-
 const resetScore = () => {
   score.innerText = 0
   goodiesCollected.innerText = 0
@@ -62,13 +60,26 @@ const stopGame = async () => {
   const highscoreNumber = Number(highscore.innerText)
   if (scoreNumber > highscoreNumber) {
     highscore.innerText = scoreNumber
+  }
+  if (scoreNumber > 1000) {
     gameOver.style.display = "block";
   }
+
   background.classList.remove("bg-animation")
   rock.classList.remove("rock-animation")
   goodie.classList.remove("goodie-animation")
+
   startScreen.style.display = "block"
   gameLoopInterval = clearInterval(gameLoopInterval)
+}
+
+const setObstacleSpeed = (score, rockLeft) => {
+  let rockSpeed = 1600 // Milliseconds
+  rockSpeed = rockSpeed - (score * 3)
+  if (rockLeft === 550) {
+    rock.style["-webkit-animation-duration"] = rockSpeed + "ms";
+  }
+
 }
 
 const randomizeGoodieAnimation = (goodieLeft) => {
@@ -78,15 +89,8 @@ const randomizeGoodieAnimation = (goodieLeft) => {
   if (goodieLeft === 550) {
     goodie.style.animationName = "goodie" + random;
   }
+};
 
-const setObstacleSpeed = (score, rockLeft) => {
-  let rockSpeed = 1330 // Milliseconds
-  rockSpeed = rockSpeed - (score * 3)
-  if (rockLeft === 550) {
-    rock.style["-webkit-animation-duration"] = rockSpeed + "ms";
-  }
-
-}
 
 const startGameLoop = () => {
   gameLoopInterval = window.setInterval(() => {
@@ -101,9 +105,9 @@ const startGameLoop = () => {
 
     score.innerText = Number(score.innerText) + 1
 
-    randomizeGoodieAnimation(goodieLeft)
-
     setObstacleSpeed(Number(score.innerText), rockLeft)
+
+    randomizeGoodieAnimation(goodieLeft)
 
     if (rockLeft < 0) {
       rock.style.display = 'none'
@@ -119,7 +123,7 @@ const startGameLoop = () => {
 
     if (goodieLeft < 50 && dinoTop < (goodieTop + 50)) {
       goodie.style.display = 'none'
-      goodiesCollected.innerText = Number(goodiesCollected.innerText) + 1
+      score.innerText = Number(score.innerText) + 50
     }
 
     if (rockLeft < 50 && rockLeft > 0 && dinoTop > 150) {
@@ -129,4 +133,3 @@ const startGameLoop = () => {
 
 }
 
-}
