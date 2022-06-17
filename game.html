@@ -11,35 +11,40 @@
 
 <body>
   <div class="header">
-
     <div class="logo">
-      <a href="./index.html">Logo</a>
+        <a href="index.html"><img src="assets/images/ds_logo.png" alt="Logo" height="100%"></a>
     </div>
 
     <div class="title">
-      Online-Shop Marketing Game - Startseite
+        <p>deinSmartphone.ch</p>
     </div>
 
-    <div class="linkToShop">
-      <a href="./shop.html">Link zum Shop</a>
+    <div>
+        <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+              <li> <a href="index.html">Home</a> </li>
+              <li> <a href="shop.html">Shop</a> </li>
+              <li> <a href="game.html">Game</a> </li>
+            </ul>
+            </label>
     </div>
-
-  </div>
-
+</div>
   <div class="content content-game">
 
 
 
     <div class="gameRow gameInfo">
-      Weichen Sie den Hindernissen aus.
-      Klicken Sie, um zu springen.
+      Weiche den Hindernissen aus und sammle die Goodies ein. Diese geben Dir jeweils 50 Extrapunkte. Für den Gewinn musst du 1000 Punkte erreichen.
+      Klicke, um zu springen.:)
     </div>
 
 
     <div id="game">
       <div class="startScreen" id="startScreen">
         <div class="startScreenText">
-          Klicken Sie, um das Spiel zu starten.
+          Klicke, um das Spiel zu starten.
         </div>
       </div>
 
@@ -57,17 +62,16 @@
     <div class="gameRow">Goodies <span id="goodies-value">0</span> </div>
 
     <div class="gameRow gameOver" id="gameOver">
-      Glückwunsch, Sie haben einen neuen Highscore erzielt!<br>
-      Besuchen Sie unseren <a href="./shop.html">Shop</a> und lösen Sie ihren Gewinn ein.
+      Glückwunsch, Du hast einen Gutschein für unseren Shop in Wert von CHF 10 gewonnen.<br>
+      Besuche unseren <a href="./shop.html">Shop</a> und löse Deinen Gewinn ein.
     </div>
-
-
 
   </div>
 
   <div class="footer">
-    about us ... about us ... about us ...
-  </div>
+    <a href="impressum.html">Impressum</a>
+    <a href="aboutus.html">about us</a>
+  </div>  
 
   <script src="assets/js/game.js"></script>
 </body>
