@@ -40,4 +40,3 @@ const databaseClient = {
       return await databaseClient.executeSqlQuery(sql)
       }
   }
-
