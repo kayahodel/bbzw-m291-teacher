@@ -40,6 +40,7 @@ body{
     text-align: center;
 }
 
+
 .formular{
     background-color: #ffffff;
     padding: 35px;
@@ -62,8 +63,10 @@ body{
   background-color: #ffffff;
   max-width: 1400px;
   margin: auto;
-  padding: 15px;
-}
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  }
 
 button {
     width: 85%;
@@ -92,8 +95,9 @@ button {
       color: #000000;
   }
 
-  table{
-    width: auto;
+  img{
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   /*hamburger menu */
@@ -200,4 +204,23 @@ button {
     transform: translate(-50%, -50%);
     width: 80%;
     text-align: center;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .shop{
+      flex: auto;
+      background-color: #ffffff;
+      max-width: 1400px;
+      margin: auto;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr;
+      }
+
+    .title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+      }
   }
